@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, Link as scroll } from 'react-scroll';
 import Logo from '../assets/Logo.svg';
 import { BsCart2 } from 'react-icons/bs';
 import { HiOutlineBars3 } from 'react-icons/hi2';
@@ -40,17 +41,47 @@ function Navbar() {
       icon: <ShoppingCartRoundedIcon />,
     },
   ];
+
   return (
     <nav>
       <div className="nav-logo-container">
         <img src={Logo} alt="" />
       </div>
       <div className="navbar-links-container">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Testimonials</a>
-        <a href="">Contact</a>
-        <a href="">
+        <Link
+          to="home"
+          smooth={true}
+          duration={500}
+          style={{ cursor: 'pointer' }}
+        >
+          Home
+        </Link>
+        <Link
+          to="about"
+          smooth={true}
+          duration={500}
+          style={{ cursor: 'pointer' }}
+        >
+          About
+        </Link>
+        <Link
+          to="testimonials"
+          smooth={true}
+          duration={500}
+          style={{ cursor: 'pointer' }}
+        >
+          Testimonials
+        </Link>
+        <Link
+          to="contact"
+          smooth={true}
+          duration={500}
+          style={{ cursor: 'pointer' }}
+        >
+          Contact
+        </Link>
+
+        <a href="./home">
           <BsCart2 className="navbar-cart-icon" />
         </a>
         <button className="primary-button">Bookings Now</button>

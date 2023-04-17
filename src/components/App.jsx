@@ -4,6 +4,7 @@ import Work from './Work';
 import Testimonials from './Testimonials';
 import Contact from './Contact';
 import Footer from './Footer';
+import ScrollButton from '../utilites/ScrollButton';
 
 export const App = () => {
   return (
@@ -14,6 +15,7 @@ export const App = () => {
       <Testimonials />
       <Contact />
       <Footer />
+      <ScrollButton />
     </div>
   );
 };
