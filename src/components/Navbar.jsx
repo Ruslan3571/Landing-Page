@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, Link as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import Logo from '../assets/Logo.svg';
 import { BsCart2 } from 'react-icons/bs';
 import { HiOutlineBars3 } from 'react-icons/hi2';

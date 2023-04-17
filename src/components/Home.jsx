@@ -21,7 +21,7 @@ function Home() {
             & marinating, so you can cook a fresh food.
           </p>
           <button className="secondary-button">
-            Order Now <FiArrowRight />{' '}
+            Order Now <FiArrowRight />
           </button>
         </div>
         <div className="home-image-section">
